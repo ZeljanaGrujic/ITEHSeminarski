@@ -1,0 +1,22 @@
+:root {
+    --bez: #FAF0CA;
+    --narandzasta: #EE964B;
+    --zuta: #F4D35E;
+    --crvena: #F95738;
+    --teget: rgb(13, 60, 104);
+    --tegetRgb: 13, 60, 104;
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.bg-default {
+
+    background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(var(--tegetRgb), 0.3)), url('./img/pozadina.png');
+    background-size: cover;
+}

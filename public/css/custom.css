@@ -1,0 +1,139 @@
+:root {
+    --bez: #FAF0CA;
+    --narandzasta: #EE964B;
+    --zuta: #F4D35E;
+    --crvena: #F95738;
+    --teget: rgb(13, 60, 104);
+    --tegetRgb: 13, 60, 104;
+
+
+}
+
+#datatable td, #datatable th {
+
+    vertical-align: middle;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--narandzasta);
+}
+
+#navbar {
+    background-color: var(--teget);
+    color: var(--bez);
+}
+
+#navbar * {
+    color: var(--bez);
+}
+
+.bg-default {
+    background-color: var(--narandzasta);
+}
+
+.bg-teget {
+    background-color: var(--teget);
+}
+
+.btn-teget {
+    background-color: var(--teget);
+    color: var(--bez);
+}
+
+.btn-teget:hover {
+    transition: background-color 0.4s linear;
+    background-color: var(--bez);
+    color: var(--teget);
+}
+
+.btn-narandzasta {
+    background-color: var(--narandzasta);
+    color: var(--bez);
+}
+
+.btn-narandzasta:hover {
+    transition: background-color 0.4s linear;
+    background-color: var(--bez);
+    color: var(--narandzasta);
+}
+
+.cl-bez {
+    color: var(--bez);
+}
+
+.cl-narandzasta {
+    color: var(--narandzasta);
+}
+
+.bg-books {
+    background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(var(--tegetRgb), 0.3)), url('./img/pozadina.png');
+    background-size: cover;
+}
+
+.bg-bez {
+    background-color: var(--bez);
+}
+
+.filters-main * {
+    background-color: inherit;
+}
+
+.filters-main {
+    background-color: var(--narandzasta) !important;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.books-pagination {
+    background: inherit;
+}
+
+.book-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+
+.middle-line {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.middle-line span {
+    padding: 0 4px;
+}
+
+
+.cart-items {
+
+    max-height: 75%;
+    min-height: 75%;
+    overflow-y: scroll;
+}
+
+#new-book-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+}
+
+.icon-btn.btn:focus, .icon-btn.btn:active:focus, .icon-btn.btn.active:focus,
+.icon-btn.btn.focus, .icon-btn.btn:active.focus, .icon-btn.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
